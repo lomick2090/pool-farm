@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(26, 37, 27);
+    color: white;
+    margin:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+}
+
+.header > h1 {
+    font-family: 'Pangolin', 'Inter', sans-serif;
+    margin-left:auto;
+}
+
+.walletconnect {
+margin-left:auto;
+}
+
+.walletconnect > button {
+        background-color: black;
+        color:white;
+        margin-right:12px;
+}

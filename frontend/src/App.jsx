@@ -3,6 +3,7 @@ import {ethers } from 'ethers'
 import Header from './components/Header'
 import farmABI from './ABIs/farmABI.json'
 import FTKABI from './ABIs/FTKABI.json'
+import ERC20ABI from './ABIs/ERC20ABI.js'
 
 export default function App() {
     const [provider, setProvider] = useState(new ethers.providers.Web3Provider(window.ethereum));
