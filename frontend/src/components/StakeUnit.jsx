@@ -26,9 +26,9 @@ export default function StakeUnit(props) {
     async function setup() {
         const tokenName =  await connectedTokenContract.name()
         const walletBalance = await connectedTokenContract.balanceOf(props.walletInfo.address)
-        const contractBalance = await connectedFarmContract.stakingBalance(props.walletInfo.address)
+        const contractBalance = await connectedFarmContract.deposited(props.pid, props.walletInfo.address)
         const allowance = await connectedTokenContract.allowance(props.walletInfo.address, props.farmContract.address)
-        const tokenYield = await connectedFarmContract.calculateYieldTotal(props.walletInfo.address)
+        const tokenYield = await connectedFarmContract.pending(props.pid, props.walletInfo.address)
         setName(tokenName)
         setUserBalance(() => {
             return {

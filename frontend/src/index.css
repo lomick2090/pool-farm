@@ -27,3 +27,66 @@ margin-left:auto;
         color:white;
         margin-right:12px;
 }
+
+.stakeunit {
+    font-family: 'Inter', sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 25vw;
+    font-size: 1vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+    background-color: rgba(0, 0, 0, 0.767);
+    color:white;
+    margin-right: auto;
+    margin-left:auto;
+    margin-top: 10px;
+}
+
+.stakeunit > h1 {
+    font-family: 'Pangolin', 'Inter', sans-serif;
+    font-size:3vw;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance:none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    width: 15vw;
+}
+
+.stakebuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    background-color:blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    margin:1px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.farmunits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
